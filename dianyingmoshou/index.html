@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电影魔兽-史诗巨制观影指南与经典回顾</title>
+    <meta name="description" content="电影魔兽专题页，提供《魔兽》电影深度影评、角色解析、剧情看点及观看指南。汇集人类与兽人两大阵营的史诗对决，探索电影背后的世界构建与艺术成就。">
+    <meta name="keywords" content="电影魔兽, 魔兽电影, 魔兽影评, 战争之王, 观影指南">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #c79c6e;
+            --secondary-color: #1a1a1a;
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --text-main: #e0e0e0;
+            --text-muted: #a0a0a0;
+            --accent-red: #b91c1c;
+            --spacing-unit: 16px;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* 布局容器 */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        /* 头部导航 */
+        header {
+            background-color: rgba(18, 18, 18, 0.95);
+            border-bottom: 1px solid #333;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--text-main);
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero 区域 */
+        .hero {
+            position: relative;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.3), var(--bg-color)), 
+                        url('https://picsum.photos/seed/warcraftbg/1920/1080') no-repeat center center/cover;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 0 4px 10px rgba(0,0,0,0.8);
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: #d1d5db;
+            margin-bottom: 40px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 32px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: #000;
+            border: 2px solid var(--primary-color);
+        }
+
+        .btn-primary:hover {
+            background-color: transparent;
+            color: var(--primary-color);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: #fff;
+            border: 2px solid #fff;
+            margin-left: 15px;
+        }
+
+        .btn-outline:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        /* 通用 Section */
+        section {
+            padding: 80px 0;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 15px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: #fff;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -17px;
+            left: 0;
+            width: 60px;
+            height: 2px;
+            background-color: var(--primary-color);
+        }
+
+        .section-subtitle {
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+
+        /* 剧情简介 */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+            color: var(--text-muted);
+            text-align: justify;
+        }
+
+        .about-image {
+            position: relative;
+        }
+
+        .about-image img {
+            border-radius: 8px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+            border: 1px solid #333;
+        }
+
+        .about-badge {
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            background-color: var(--card-bg);
+            padding: 20px;
+            border-left: 4px solid var(--primary-color);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        .about-badge .stat {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #fff;
+            display: block;
+        }
+
+        .about-badge .label {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        /* 角色阵营 */
+        .factions {
+            background-color: #161616;
+        }
+
+        .factions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .faction-card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #333;
+        }
+
+        .faction-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border-color: var(--primary-color);
+        }
+
+        .faction-img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+            filter: grayscale(20%);
+        }
+
+        .faction-content {
+            padding: 25px;
+        }
+
+        .faction-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .faction-desc {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        .faction-link {
+            color: var(--primary-color);
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .faction-link::after {
+            content: '→';
+            margin-left: 5px;
+            transition: margin-left 0.2s;
+        }
+
+        .faction-link:hover::after {
+            margin-left: 10px;
+        }
+
+        /* 影评与看点 */
+        .reviews {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+        }
+
+        .review-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .review-item {
+            background-color: var(--card-bg);
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid #444;
+            transition: border-color 0.3s;
+        }
+
+        .review-item:hover {
+            border-left-color: var(--primary-color);
+        }
+
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .review-tag {
+            font-size: 0.8rem;
+            padding: 4px 8px;
+            border-radius: 4px;
+            background-color: #333;
+            color: #ccc;
+        }
+
+        .review-tag.highlight {
+            background-color: rgba(199, 156, 110, 0.2);
+            color: var(--primary-color);
+        }
+
+        .review-title {
+            font-size: 1.2rem;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .review-text {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .sidebar-widget {
+            background-color: var(--card-bg);
+            padding: 25px;
+            border-radius: 8px;
+        }
+
+        .widget-title {
+            font-size: 1.2rem;
+            color: #fff;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+        }
+
+        .list-group li {
+            margin-bottom: 12px;
+            border-bottom: 1px dashed #333;
+            padding-bottom: 12px;
+        }
+
+        .list-group li:last-child {
+            border-bottom: none;
+        }
+
+        .list-group a {
+            display: flex;
+            justify-content: space-between;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .list-group a:hover {
+            color: var(--primary-color);
+        }
+
+        .list-group span {
+            font-size: 0.8rem;
+            color: #666;
+        }
+
+        /* FAQ */
+        .faq {
+            background-color: #161616;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #333;
+        }
+
+        .faq-question {
+            padding: 20px 0;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #fff;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            color: var(--text-muted);
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+            padding-bottom: 20px;
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '-';
+        }
+
+        /* 页脚 */
+        footer {
+            background-color: #0a0a0a;
+            padding: 60px 0 20px;
+            border-top: 1px solid #333;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: #fff;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        .copyright {
+            text-align: center;
+            color: #555;
+            font-size: 0.85rem;
+            padding-top: 20px;
+            border-top: 1px solid #222;
+        }
+
+        /* 响应式 */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .nav-links {
+                display: none; /* 简化处理，移动端隐藏菜单 */
+            }
+
+            .about-grid, .reviews {
+                grid-template-columns: 1fr;
+            }
+
+            .about-badge {
+                position: relative;
+                bottom: auto;
+                right: auto;
+                margin-top: 20px;
+                display: flex;
+                align-items: center;
+                gap: 15px;
+            }
+
+            .about-badge .stat {
+                font-size: 1.5rem;
+            }
+
+            .btn {
+                display: block;
+                width: 100%;
+                margin: 10px 0 0 0;
+                text-align: center;
+            }
+
+            .btn-outline {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <div class="logo">WARCRAFT</div>
+            <nav class="nav-links">
+                <a href="#">首页</a>
+                <a href="#about">剧情简介</a>
+                <a href="#factions">角色阵营</a>
+                <a href="#reviews">深度影评</a>
+                <a href="#faq">常见问题</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>电影魔兽<br>史诗巨制的视觉盛宴</h1>
+                <p>当两个世界在德拉诺星球碰撞，人类与兽人被迫在生存与毁灭之间做出抉择。体验这部改编自经典游戏IP的史诗奇幻巨作。</p>
+                <div class="hero-btns">
+                    <a href="#about" class="btn btn-primary">开始观影</a>
+                    <a href="#reviews" class="btn btn-outline">查看影评</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="container">
+            <div class="section-header">
+                <h2 class="section-title">剧情与背景</h2>
+                <span class="section-subtitle">The Story Behind the Battle</span>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p><strong>《魔兽》</strong>是一部于2016年上映的美国奇幻动作片，由邓肯·琼斯执导，改编自暴雪娱乐的同名电子游戏系列。影片主要讲述了两个世界的碰撞：一个是拥有高度文明的艾泽拉斯，另一个是饱受折磨的德拉诺星球。</p>
+                    <p>故事始于兽人萨满古尔丹，他为了拯救濒临毁灭的家园，通过黑暗仪式打开了两个世界的连接通道——黑暗之门。这一举动不仅引来了兽人部落，也迫使人类联盟不得不做出反击。影片通过两条主线交织，展现了战争双方的动机与挣扎，探讨了仇恨、救赎与和平的复杂主题。</p>
+                    <p>本片在视觉效果上获得了广泛好评，尤其是对兽人角色的面部特效和战斗场面的调度，力求还原游戏中的宏大世界观。</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://picsum.photos/seed/warcraftmovie/600/400" alt="魔兽电影海报风格图">
+                    <div class="about-badge">
+                        <span class="stat">2016</span>
+                        <span class="label">上映年份</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Factions Section -->
+        <section id="factions" class="factions">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">主要阵营</h2>
+                    <span class="section-subtitle">Two Factions, One War</span>
+                </div>
+                <div class="factions-grid">
+                    <!-- Human Card -->
+                    <article class="faction-card">
+                        <img src="https://picsum.photos/seed/humanking/400/300" alt="人类联盟" class="faction-img">
+                        <div class="faction-content">
+                            <h3 class="faction-title">人类联盟</h3>
+                            <p class="faction-desc">以洛丹伦王国为首的联盟，拥有强大的魔法师、骑士和坚不可摧的城墙。他们为了保卫家园，勇敢地面对来自异界的入侵者。</p>
+                            <a href="#" class="faction-link">探索联盟</a>
+                        </div>
+                    </article>
+
+                    <!-- Orc Card -->
+                    <article class="faction-card">
+                        <img src="https://picsum.photos/seed/orcclan/400/300" alt="兽人部落" class="faction-img">
+                        <div class="faction-content">
+                            <h3 class="faction-title">兽人部落</h3>
+                            <p class="faction-desc">原本生活在德拉诺的萨满教徒，受古尔丹蛊惑后堕落为恶魔猎人。他们拥有惊人的力量和原始的野性，在绝望中寻找新的家园。</p>
+                            <a href="#" class="faction-link">探索部落</a>
+                        </div>
+                    </article>
+
+                    <!-- Alliance Card -->
+                    <article class="faction-card">
+                        <img src="https://picsum.photos/seed/demon/400/300" alt="黑暗之门" class="faction-img">
+                        <div class="faction-content">
+                            <h3 class="faction-title">黑暗之门</h3>
+                            <p class="faction-desc">连接两个世界的通道，战争的源头。它既是毁灭的入口，也是改变命运的契机。站在门前，即是站在命运的十字路口。</p>
+                            <a href="#" class="faction-link">了解历史</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews & Sidebar -->
+        <section id="reviews" class="container">
+            <div class="section-header">
+                <h2 class="section-title">深度影评</h2>
+                <span class="section-subtitle">Critical Analysis</span>
+            </div>
+            <div class="reviews">
+                <div class="review-list">
+                    <article class="review-item">
+                        <div class="review-header">
+                            <span class="review-tag highlight">视觉特效</span>
+                            <span class="review-tag">特效</span>
+                        </div>
+                        <h3 class="review-title">还原度极高的角色塑造</h3>
+                        <p class="review-text">影片最成功之处在于对兽人角色的塑造。不同于传统电影中纯粹的怪物形象，电影赋予了他们丰富的情感和悲剧色彩，让观众能够共情。</p>
+                    </article>
+
+                    <article class="review-item">
+                        <div class="review-header">
+                            <span class="review-tag highlight">剧情节奏</span>
+                            <span class="review-tag">剧情</span>
+                        </div>
+                        <h3 class="review-title">前传设定的宏大叙事</h3>
+                        <p class="review-text">作为前传，影片需要交代大量世界观背景。虽然节奏略显紧凑，但成功地构建了一个史诗般的战争框架，为后续故事埋下了伏笔。</p>
+                    </article>
+
+                    <article class="review-item">
+                        <div class="review-header">
+                            <span class="review-tag highlight">配乐</span>
+                            <span class="review-tag">音乐</span>
+                        </div>
+                        <h3 class="review-title">激昂与悲壮并存的交响乐</h3>
+                        <p class="review-text">配乐完美契合了史诗奇幻的氛围，激昂的战斗音乐与悲壮的背景音乐交替出现，极大地增强了观影的沉浸感。</p>
+                    </article>
+                </div>
+
+                <aside class="sidebar">
+                    <div class="sidebar-widget">
+                        <h4 class="widget-title">相关推荐</h4>
+                        <ul class="list-group">
+                            <li><a href="#">暴风城：王国的荣耀</a><span>2.1万</span></li>
+                            <li><a href="#">古尔丹：堕落之路</a><span>1.8万</span></li>
+                            <li><a href="#">麦迪文：守护者的抉择</a><span>1.5万</span></li>
+                            <li><a href="#">萨尔：从奴隶到酋长</a><span>1.2万</span></li>
+                            <li><a href="#">战锤：魔兽世界的起源</a><span>9千</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-widget" style="margin-top: 30px;">
+                        <h4 class="widget-title">观影指南</h4>
+                        <ul class="list-group">
+                            <li><a href="#">观看顺序建议</a><span>攻略</span></li>
+                            <li><a href="#">原著小说对比</a><span>对比</span></li>
+                            <li><a href="#">未公开花絮</a><span>幕后</span></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq">
+            <div class="container faq-container">
+                <div class="section-header" style="justify-content: center; text-align: center; border: none;">
+                    <h2 class="section-title">常见问题</h2>
+                    <span class="section-subtitle">FAQ</span>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">这部电影是《魔兽世界》游戏的直接改编吗？</div>
+                    <div class="faq-answer">
+                        <p>是的，电影基于暴雪娱乐的《魔兽世界》游戏背景故事改编。虽然剧情是原创的，但其中包含了许多经典的游戏角色和设定。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">观影前需要了解多少游戏背景？</div>
+                    <div class="faq-answer">
+                        <p>不需要。虽然了解背景会让观影体验更丰富，但本片作为前传，剧情独立完整，能够照顾到从未接触过游戏的观众。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">电影中有哪些经典角色？</div>
+                    <div class="faq-answer">
+                        <p>主要角色包括人类领袖安杜因·洛萨、兽人酋长奥格瑞姆·毁灭之锤、萨满古尔丹以及守护者麦迪文等。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>WARCRAFT</h4>
+                    <p style="color: #777; font-size: 0.9rem; line-height: 1.6;">
+                        致敬经典，重温史诗。本站致力于提供最详尽的《魔兽》电影资料与深度解读。
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速导航</h4>
+                    <ul>
+                        <li><a href="#">剧情介绍</a></li>
+                        <li><a href="#">角色图鉴</a></li>
+                        <li><a href="#">幕后花絮</a></li>
+                        <li><a href="#">观影评分</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>相关资源</h4>
+                    <ul>
+                        <li><a href="#">暴雪娱乐官网</a></li>
+                        <li><a href="#">魔兽世界官网</a></li>
+                        <li><a href="#">电影原声带</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 魔兽电影专题页. All Rights Reserved. 本站为非盈利性粉丝站点，内容仅供学习交流。
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ 交互逻辑
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    // 关闭其他已打开的项
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // 切换当前项
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
