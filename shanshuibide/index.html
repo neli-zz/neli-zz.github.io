@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="山水比德中签号查询与公示入口。提供最新的山水比德设计竞赛、人才招聘及活动报名中签结果查询服务，包含中签公示名单、相关设计资讯及常见问题解答。">
+    <meta name="keywords" content="山水比德中签号,山水比德公示,山水比德招聘,山水比德设计竞赛">
+    <title>山水比德中签号-官方公示查询与设计资讯平台</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #c0392b;
+            --bg-color: #f4f6f7;
+            --card-bg: #ffffff;
+            --text-main: #333333;
+            --text-secondary: #666666;
+            --border-color: #e1e4e8;
+            --spacing-unit: 1rem;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Header & Nav */
+        header {
+            background-color: var(--card-bg);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav a {
+            font-weight: 500;
+            font-size: 1rem;
+            color: var(--primary-color);
+        }
+
+        nav a.active {
+            color: var(--accent-color);
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            background: #f0f2f5;
+            border-radius: 20px;
+            padding: 5px 15px;
+        }
+
+        .search-box input {
+            border: none;
+            background: transparent;
+            outline: none;
+            padding: 5px;
+            width: 150px;
+            color: var(--text-main);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #2c3e50 0%, #4ca1af 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        .hero-btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 12px 35px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .hero-btn:hover {
+            background-color: #a93226;
+            transform: translateY(-2px);
+        }
+
+        /* Main Layout */
+        .main-container {
+            max-width: var(--container-width);
+            margin: -40px auto 40px;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+        }
+
+        /* Content Sections */
+        section {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        }
+
+        .section-title {
+            font-size: 1.25rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--bg-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .section-title a {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        /* List Styles */
+        .result-list {
+            list-style: none;
+        }
+
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .result-item:last-child {
+            border-bottom: none;
+        }
+
+        .info-group h3 {
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+
+        .info-group p {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .status-success {
+            background-color: #e8f8f5;
+            color: #27ae60;
+        }
+
+        .status-pending {
+            background-color: #fef9e7;
+            color: #f39c12;
+        }
+
+        /* Sidebar */
+        .sidebar-widget {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        }
+
+        .widget-title {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+
+        .category-list {
+            list-style: none;
+        }
+
+        .category-list li {
+            margin-bottom: 10px;
+        }
+
+        .category-list a {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 10px;
+            border-radius: 4px;
+            background: #f8f9fa;
+            font-size: 0.95rem;
+        }
+
+        .category-list a:hover {
+            background: #e9ecef;
+            color: var(--accent-color);
+        }
+
+        .count {
+            background: #e0e0e0;
+            color: #666;
+            padding: 2px 6px;
+            border-radius: 10px;
+            font-size: 0.75rem;
+        }
+
+        /* FAQ Section */
+        .faq-item {
+            border-bottom: 1px solid var(--border-color);
+            padding: 15px 0;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--primary-color);
+            cursor: pointer;
+        }
+
+        .faq-answer {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            padding-left: 10px;
+            border-left: 3px solid var(--accent-color);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 40px 20px;
+            margin-top: 40px;
+        }
+
+        .footer-content {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+        }
+
+        .footer-col h4 {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-col a {
+            color: #bdc3c7;
+        }
+
+        .footer-col a:hover {
+            color: white;
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #95a5a6;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .main-container {
+                grid-template-columns: 1fr;
+            }
+            
+            nav ul {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .search-box {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span>山水</span>比德
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">中签公示</a></li>
+                    <li><a href="#">竞赛报名</a></li>
+                    <li><a href="#">人才招聘</a></li>
+                    <li><a href="#">设计资讯</a></li>
+                    <li><a href="#">关于我们</a></li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <input type="text" placeholder="搜索中签号...">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>山水比德中签号查询中心</h1>
+        <p>实时更新山水比德设计竞赛、校园招聘及各类活动的中签结果公示。请根据活动名称或您的姓名/准考证号进行查询。</p>
+        <a href="#latest-results" class="hero-btn">查看最新公示</a>
+    </section>
+
+    <div class="main-container">
+        <!-- Main Content -->
+        <main>
+            <!-- Latest Results -->
+            <section id="latest-results">
+                <div class="section-title">
+                    <h2>最新中签公示</h2>
+                    <a href="#">查看全部公示 &rarr;</a>
+                </div>
+                <ul class="result-list">
+                    <li class="result-item">
+                        <div class="info-group">
+                            <h3>2024年度山水比德校园招聘 - 建筑设计师岗</h3>
+                            <p>公示时间：2024-05-20 至 2024-05-22</p>
+                        </div>
+                        <span class="status-badge status-success">已公示</span>
+                    </li>
+                    <li class="result-item">
+                        <div class="info-group">
+                            <h3>2024“未来城市”景观设计竞赛 - 入围作品</h3>
+                            <p>公示时间：2024-05-18 至 2024-05-25</p>
+                        </div>
+                        <span class="status-badge status-success">已公示</span>
+                    </li>
+                    <li class="result-item">
+                        <div class="info-group">
+                            <h3>2024年暑期实习生招募 - 绿化景观岗</h3>
+                            <p>公示时间：2024-05-15 至 2024-05-17</p>
+                        </div>
+                        <span class="status-badge status-pending">公示中</span>
+                    </li>
+                    <li class="result-item">
+                        <div class="info-group">
+                            <h3>2024年度“理想之地”设计沙龙 - 抽奖结果</h3>
+                            <p>公示时间：2024-05-12 至 2024-05-14</p>
+                        </div>
+                        <span class="status-badge status-success">已公示</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Detailed List -->
+            <section>
+                <div class="section-title">
+                    <h2>近期中签名单详情</h2>
+                </div>
+                <div style="background: #f8f9fa; padding: 20px; border-radius: 6px; overflow-x: auto;">
+                    <table style="width: 100%; border-collapse: collapse; font-size: 0.9rem;">
+                        <thead>
+                            <tr style="border-bottom: 2px solid #ddd; text-align: left;">
+                                <th style="padding: 10px;">活动名称</th>
+                                <th style="padding: 10px;">姓名/ID</th>
+                                <th style="padding: 10px;">岗位/类别</th>
+                                <th style="padding: 10px;">状态</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid #eee;">
+                                <td style="padding: 10px;">校园招聘-建筑设计师</td>
+                                <td style="padding: 10px;">张伟</td>
+                                <td style="padding: 10px;">A类</td>
+                                <td style="padding: 10px;"><span style="color:green">中签</span></td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #eee;">
+                                <td style="padding: 10px;">校园招聘-建筑设计师</td>
+                                <td style="padding: 10px;">李娜</td>
+                                <td style="padding: 10px;">B类</td>
+                                <td style="padding: 10px;"><span style="color:green">中签</span></td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #eee;">
+                                <td style="padding: 10px;">校园招聘-建筑设计师</td>
+                                <td style="padding: 10px;">王强</td>
+                                <td style="padding: 10px;">A类</td>
+                                <td style="padding: 10px;"><span style="color:green">中签</span></td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #eee;">
+                                <td style="padding: 10px;">校园招聘-建筑设计师</td>
+                                <td style="padding: 10px;">赵敏</td>
+                                <td style="padding: 10px;">B类</td>
+                                <td style="padding: 10px;"><span style="color:green">中签</span></td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px;">校园招聘-建筑设计师</td>
+                                <td style="padding: 10px;">刘洋</td>
+                                <td style="padding: 10px;">A类</td>
+                                <td style="padding: 10px;"><span style="color:green">中签</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div style="margin-top: 15px; text-align: center;">
+                    <a href="#" style="color: var(--accent-color); font-size: 0.9rem;">&laquo; 上一页</a> <span style="margin: 0 10px;">1</span> <a href="#" style="color: var(--accent-color); font-size: 0.9rem;">下一页 &raquo;</a>
+                </div>
+            </section>
+        </main>
+
+        <!-- Sidebar -->
+        <aside>
+            <div class="sidebar-widget">
+                <h3 class="widget-title">快速查询</h3>
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                    <input type="text" placeholder="请输入姓名或准考证号" style="padding: 10px; border: 1px solid #ddd; border-radius: 4px; width: 100%;">
+                    <button style="padding: 10px; background: var(--primary-color); color: white; border: none; border-radius: 4px; cursor: pointer;">立即查询</button>
+                </div>
+            </div>
+
+            <div class="sidebar-widget">
+                <h3 class="widget-title">公示分类</h3>
+                <ul class="category-list">
+                    <li><a href="#">设计竞赛 <span class="count">12</span></a></li>
+                    <li><a href="#">校园招聘 <span class="count">8</span></a></li>
+                    <li><a href="#">实习生招募 <span class="count">5</span></a></li>
+                    <li><a href="#">活动抽奖 <span class="count">3</span></a></li>
+                    <li><a href="#">人才引进 <span class="count">2</span></a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-widget">
+                <h3 class="widget-title">常见问题</h3>
+                <div class="faq-item">
+                    <div class="faq-question">如何确认中签信息？</div>
+                    <div class="faq-answer">请在“最新中签公示”栏目中查找对应的活动，核对姓名及准考证号。如需电子版证明，请联系招聘邮箱。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">公示期结束后如何办理入职？</div>
+                    <div class="faq-answer">公示期结束后，中签者将收到邮件通知，请按照邮件指引准备材料并按时报到。</div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>关于山水比德</h4>
+                <p style="color: #bdc3c7; font-size: 0.9rem;">山水比德是国内领先的数字生命体设计机构，致力于以设计推动城市与自然的共生，创造智慧而诗意的人居环境。</p>
+            </div>
+            <div class="footer-col">
+                <h4>快速链接</h4>
+                <ul>
+                    <li><a href="#">官方网站</a></li>
+                    <li><a href="#">设计作品</a></li>
+                    <li><a href="#">加入我们</a></li>
+                    <li><a href="#">联系客服</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>联系方式</h4>
+                <ul>
+                    <li>电话：020-12345678</li>
+                    <li>邮箱：hr@shanshui.com</li>
+                    <li>地址：广东省广州市天河区...</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2024 山水比德股份有限公司 版权所有 | 本页面仅为信息展示平台
+        </div>
+    </footer>
+
+</body>
+</html>
